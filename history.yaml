@@ -1,0 +1,32 @@
+- 2013/01/22:
+  - その他:
+    - title: axffmpeg.spi を更新(0.02)。
+      url: '#axffmpeg_spi'
+      content:
+      - 進捗ダイアログの表示。
+      - 展開失敗時にエラー画像を設定。
+      - 対応拡張子のユーザー指定。
+- 2013/01/01:
+  - あけましておめでとうございます。本年もよろしくお願いします。:
+    - 新年更新用ということで、大晦日から突貫で作成したものだったりします。
+  - その他:
+    - title: FFmpeg を使用した動画からの画像抽出 Susie plugin axffmpeg.spi を公開(0.01)。
+      url: '#axffmpeg_spi'
+      content:
+      - 動画を画像書庫とみなし、指定枚数あるいは指定間隔毎の画像を抽出します。
+      - FFmpeg の実行形式ファイル、PNG 表示用の Susie plugin が別途必要です。
+- 2012/12/14:
+  - Cygwin 関連:
+    - title: Boost を 1.52 ベースに更新(1.52.0-1)。
+      url: '#cygwin.boost'
+      content:
+      - >
+        Boost.Context も動作するようにしましたが、切り替えた先のコンテキストで
+        Cygwin のシステムコールを呼べるように
+        NT TIB のスタック情報は切り替えないので問題があるかもしれません。
+- 2012/10/06:
+  - Cygwin 関連:
+    - title: GNU GLOBAL を 6.2.4 ベースに更新。
+      url: '#cygwin.global'
+      content:
+      - プラグインとして Exuberant Ctags を正しく呼べるように修正＆依存を設定。
