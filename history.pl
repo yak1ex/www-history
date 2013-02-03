@@ -10,9 +10,10 @@ use YAML::Any;
 use XML::FeedPP;
 use IO::Scalar;
 
-my $HTML_ENCODE = 'utf-8';
+my $HTML_ENCODE = 'UTF-8';
 my $META_THR = 30;
 my $BASE_URL = 'http://yak3.myhome.cx:8080/junks/';
+my $TARGET_FOLDER = '/home/atarashi/work/sitedata/junks';
 
 sub outtree
 {
@@ -113,7 +114,7 @@ my %types = (
 			my $time = timelocal(0,0,0,$date[2],$date[1]-1,$date[0]);
 			outtree_atom($atom, $date->{$key}, $time);
 		}
-		$atom->to_file('history'.$types{$type});
+		$atom->to_file($TARGET_FOLDER.'/history'.$types{$type});
 	}
 }
 
@@ -137,7 +138,7 @@ my $meta;
 }
 
 { # HTML - history
-	open my $fh, '>', 'history.html';
+	open my $fh, '>', $TARGET_FOLDER.'/history.html';
 	print $fh Encode::encode($HTML_ENCODE, <<HEADER);
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML lang="ja">
@@ -173,8 +174,8 @@ FOOTER
 }
 
 { # HTML - index
-	open my $fh, '<', 'index.html';
-	open my $fhout, '>', 'index.html.out';
+	open my $fh, '<', $TARGET_FOLDER.'/index.html';
+	open my $fhout, '>', $TARGET_FOLDER.'/index.html.out';
 	my $inmeta = 0;
 	while(<$fh>) {
 		if(/<META NAME="WWWC" CONTENT="/) {
@@ -188,5 +189,5 @@ FOOTER
 	}
 	close $fhout;
 	close $fh;
-	rename 'index.html.out', 'index.html';
+	rename $TARGET_FOLDER.'/index.html.out', $TARGET_FOLDER.'/index.html';
 }
