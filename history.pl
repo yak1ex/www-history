@@ -12,7 +12,7 @@ use IO::Scalar;
 
 my $HTML_ENCODE = 'utf-8';
 my $META_THR = 30;
-my $BASE_URL = 'http://yak3.myohome.cx:8080/junks/';
+my $BASE_URL = 'http://yak3.myhome.cx:8080/junks/';
 
 sub outtree
 {
