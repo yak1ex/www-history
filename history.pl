@@ -145,9 +145,9 @@ my $meta;
 <HEAD>
 <META http-equiv="Content-Type" content="text/html;charset=$HTML_ENCODE">
 <LINK rel="stylesheet" href="style.css" type="text/css">
-<LINK rel="alternate" type="application/atom+xml" title="Atom" href="history.atom" />
-<LINK rel="alternate" type="application/rss+xml" title="RSS" href="history.rdf" />
-<LINK rel="alternate" type="application/rss+xml" title="RSS2" href="history.rss" />
+<LINK rel="alternate" type="application/atom+xml" title="Atom" href="history.atom">
+<LINK rel="alternate" type="application/rss+xml" title="RSS" href="history.rdf">
+<LINK rel="alternate" type="application/rss+xml" title="RSS2" href="history.rss">
 $meta<TITLE>物置履歴</TITLE>
 </HEAD>
 <BODY>
