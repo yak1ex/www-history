@@ -1,4 +1,9 @@
 ---
+- 2013/03/14:
+  - title: Privoxy 関連
+    url: '#privoxy.selfpatch'
+    content:
+    - 「機能追加版」を 3.0.21-stable ベースに更新(3.0.21-y0)。
 - 2013/02/05:
   - その他:
     - title: axffmpeg.spi を更新(0.03)。
