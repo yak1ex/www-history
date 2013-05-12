@@ -1,4 +1,9 @@
 ---
+- 2013/05/12:
+  - title: Privoxy 関連
+    url: '#privoxy.selfpatch'
+    content:
+    - 「機能追加版」で本家版と zlib DLL が異なるため追加(3.0.21-y1)。
 - 2013/04/29:
   - その他:
     - title: ディスクキャッシュ用メモリ解放ツール reducecache を追加(0.02)。
