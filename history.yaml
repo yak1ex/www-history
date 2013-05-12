@@ -1,4 +1,10 @@
 ---
+- 2013/04/29:
+  - その他:
+    - title: ディスクキャッシュ用メモリ解放ツール reducecache を追加(0.02)。
+      url: '#misc.reducecache'
+      content:
+      - Windows でディスクキャッシュに割り当てられたメモリを解放します。64bit 専用です。
 - 2013/03/14:
   - title: Privoxy 関連
     url: '#privoxy.selfpatch'
