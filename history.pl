@@ -78,6 +78,8 @@ sub outtree_atom
 	} elsif(ref($data) eq 'HASH') {
 		my ($key, $title);
 		if(exists $data->{content}) {
+			my @content_attr;
+			@content_attr = (type => 'html') if ref($obj) =~ /Atom/;
 			my $content;
 			my $fh = IO::Scalar->new(\$content);
 			outtree($fh, $data->{content});
@@ -86,8 +88,7 @@ sub outtree_atom
 				link => $BASE_URL.$data->{url},
 				title => $data->{title},
 				pubDate => $date,
-				description => Encode::decode($HTML_ENCODE, $content),
-			);
+			)->description(Encode::decode($HTML_ENCODE, $content), @content_attr);
 		} else {
 			($key) = keys %$data;
 			outtree_atom($obj, $data->{$key}, $date);
@@ -98,7 +99,7 @@ sub outtree_atom
 my $dat = YAML::Any::LoadFile('history.yaml');
 
 my %types = (
-	'XML::FeedPP::Atom' => '.atom',
+	'XML::FeedPP::Atom::Atom10' => '.atom',
 	'XML::FeedPP::RSS' => '.rss',
 	'XML::FeedPP::RDF' => '.rdf',
 );
@@ -108,12 +109,17 @@ my %types = (
 		my $atom = $type->new;
 		$atom->title('物置');
 		$atom->link($BASE_URL);
+		$atom->description('物置') if $types{$type} ne '.atom';
+		my $pubdate = time;
+		$atom->pubDate($pubdate);
 		foreach my $date (@$dat) {
 			my ($key) = keys %$date;
 			my @date = split m|/|, $key;
 			my $time = timelocal(0,0,0,$date[2],$date[1]-1,$date[0]);
 			outtree_atom($atom, $date->{$key}, $time);
 		}
+		$atom->set('id' => $BASE_URL.'?'.$pubdate) if $types{$type} eq '.atom';
+		$atom->uniq_item;
 		$atom->to_file($TARGET_FOLDER.'/history'.$types{$type});
 	}
 }
