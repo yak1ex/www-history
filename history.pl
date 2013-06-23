@@ -110,15 +110,14 @@ my %types = (
 		$atom->title('物置');
 		$atom->link($BASE_URL);
 		$atom->description('物置') if $types{$type} ne '.atom';
-		my $pubdate = time;
-		$atom->pubDate($pubdate);
+		$atom->pubDate(time);
 		foreach my $date (@$dat) {
 			my ($key) = keys %$date;
 			my @date = split m|/|, $key;
 			my $time = timelocal(0,0,0,$date[2],$date[1]-1,$date[0]);
 			outtree_atom($atom, $date->{$key}, $time);
 		}
-		$atom->set('id' => $BASE_URL.'?'.$pubdate) if $types{$type} eq '.atom';
+		$atom->set('id' => $BASE_URL) if $types{$type} eq '.atom';
 		$atom->uniq_item;
 		$atom->to_file($TARGET_FOLDER.'/history'.$types{$type});
 	}
