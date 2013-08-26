@@ -1,4 +1,26 @@
 ---
+- 2013/08/25:
+  - その他:
+    - title: 「ax7z.spi for 7-zip 4.57+ s」を更新(s_y4b3)。
+      url: '#misc.ax7z_s_spi'
+      content:
+      - マルチユーザー環境向けにデフォルトの ini 作成位置を変更。
+      - 使用 7z.dll のバージョンをバージョン情報に表示。
+      - バージョンリソースを設定。
+      - キャッシュ用 DB を常に UTF-8 エンコードで作成するよう修正。
+      - SPI 関数で例外を補足するよう変更。
+      - 開発環境を VisualStudio 2012 に変更。
+      - Boost を 1.54 に更新。
+      - SQLite を 3.7.17 に更新。
+    - title: 「ax7z.spi for 7-zip 4.57+」を更新(y3b4)。
+      url: '#misc.ax7z_spi'
+      content:
+      - マルチユーザー環境向けにデフォルトの ini 作成位置を変更。
+      - 使用 7z.dll のバージョンをバージョン情報に表示。
+      - バージョンリソースを設定。
+      - SPI 関数で例外を補足するよう変更。
+      - 開発環境を VisualStudio 2012 に変更。
+      - Boost を 1.54 に更新。
 - 2013/05/12:
   - title: Privoxy 関連
     url: '#privoxy.selfpatch'
