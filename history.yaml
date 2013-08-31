@@ -1,4 +1,29 @@
 ---
+- 2013/08/31:
+  - title: Cygwin 関連
+    url: '#cygwin'
+    content:
+    - setup.exe の変更に合わせて x86 フォルダ階層を追加。
+- 2013/08/28:
+  - その他:
+    - title: 「ax7z.spi for 7-zip 4.57+ s」を更新(s_y4b4)。
+      url: '#misc.ax7z_s_spi'
+      content:
+      - XP で動作するよう修正。
+    - title: 「ax7z.spi for 7-zip 4.57+」を更新(y3b5)。
+      url: '#misc.ax7z_spi'
+      content:
+      - XP で動作するよう修正。
+- 2013/08/26:
+  - その他:
+    - title: 「ax7z.spi for 7-zip 4.57+ s」の旧バージョンリンクを復帰(s_y4a2)。
+      url: '#misc.ax7z_s_spi'
+      content:
+      - s_y3b3 が XP で動作しないバイナリになっているため一旦旧バージョンリンクを復帰します。
+    - title: 「ax7z.spi for 7-zip 4.57+」を旧バージョンリンクを復帰(y3b3)。
+      url: '#misc.ax7z_spi'
+      content:
+      - y3b4 が XP で動作しないバイナリになっているため一旦旧バージョンリンクを復帰します。
 - 2013/08/25:
   - その他:
     - title: 「ax7z.spi for 7-zip 4.57+ s」を更新(s_y4b3)。
