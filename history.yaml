@@ -1,4 +1,13 @@
 ---
+- 2014/01/01:
+  - あけましておめでとうございます。本年もよろしくお願いします。:
+    - 昨年に引き続きまして新年更新用ということで突貫で作成しております。
+  - その他:
+    - title: Markdown 形式のファイルを画像として描画する Susie plugin ifmd.spi を公開(0.01)。
+      url: '#misc.ifmd_spi'
+      content:
+      - Markdown から一旦 HTML に変換し InternetExplorer の描画エンジン(MSHTML)を使って画像化しています。
+      - 過去には HTML 用プラグインも有ったようですし、手間なく対応できそうですがニーズ有りますかね？
 - 2013/08/31:
   - title: Cygwin 関連
     url: '#cygwin'
