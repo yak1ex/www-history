@@ -1,4 +1,9 @@
 ---
+- 2014/04/22:
+  - title: Cygwin 関連
+    url: '#cygwin'
+    content:
+      - Boost を 1.55 に更新(1.55.0-1)。
 - 2014/04/12:
   - title: Cygwin 関連
     url: '#cygwin'
