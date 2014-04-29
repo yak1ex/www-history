@@ -3,6 +3,15 @@
   - title: Cygwin 関連
     url: '#cygwin'
     content:
+      - Jam less を FreeBSD ports を参考に更新(less-382-iso262-ext03-cs_regex-1)。:
+        - http://bogytech.blogspot.jp/search/label/jless の UTF-8 パッチ less-382-iso262.ext03.patch.gz を適用。
+        - cs_regex 有効でビルド(動作未確認)。
+        - ↑パッチで CP932 (拡張文字系)も表示可能なので、http://www.d2.dion.ne.jp/~imady/freesoft/lesspatch/index.html の非公式パッチは削除。
+        - 日本語で Cygwin を使用している人は JLESSCHARSET を japanesecp932-utf8 とすることで大体問題ないはず。
+- 2014/04/22:
+  - title: Cygwin 関連
+    url: '#cygwin'
+    content:
       - Boost を 1.55 に更新(1.55.0-1)。
 - 2014/04/12:
   - title: Cygwin 関連
