@@ -1,4 +1,19 @@
 ---
+- 2014/05/06:
+  - title: Cygwin 関連
+    url: '#cygwin'
+    content:
+      - cygport-usrlocal を x86_64 ビルド用に調整 (0.9-1)。
+      - 最新環境で再ビルド。:
+        - screen_cp932 (4.0.3-5)
+        - screen_patched (4.0.3-3)
+      - x86_64 用パッケージを配布開始(同一ソースとするため x86 版も必要があれば更新)。:
+        - screen_cp932 (4.0.3-5)
+        - screen_patched (4.0.3-3)
+        - Jam less (382-iso262-ext03-cs_regex-2)
+        - GLOBAL (6.2.12-2)
+        - nkf, nkf-perl (2.1.3-1)
+        - libiconv_ja (1.14-2)
 - 2014/04/22:
   - title: Cygwin 関連
     url: '#cygwin'
