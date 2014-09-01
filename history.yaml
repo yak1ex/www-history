@@ -1,4 +1,10 @@
 ---
+- 2014/09/01:
+  - title: Cygwin 関連
+    url: '#cygwin'
+    content:
+      - graphviz が Cygwin 本家で配布されるようになったため配布停止
+      - git-subtree (2.0.4-1) を追加
 - 2014/05/06:
   - title: Cygwin 関連
     url: '#cygwin'
