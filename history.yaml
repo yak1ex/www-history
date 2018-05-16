@@ -1,4 +1,47 @@
 ---
+- 2018/05/17:
+  - title: Cygwin 関連
+    url: '#cygwin'
+    content:
+      - cygport-usrlocal を最新環境に合わせて調整 (0.10-1)。
+      - 古い libncurses が削除されたため最新環境で再ビルド(x86, x86_64とも)。再ビルドしたのみで upstream の取り込みは未実施です。:
+        - screen_cp932 (4.0.3-6)
+        - screen_patched (4.0.3-4)
+        - Jam less (382-iso262-ext03-cs_regex-3)
+- 2018/05/16:
+  - 3年も更新が空くとは思いもよらず。なにがしかを作っていたりはするのですがちょこっと更新してまたずっと空く状態になるかも。
+  - その他:
+    - title: PDF 用 Susie plugin axpdfium.spi を更新(0.02)。
+      url: '#misc.axpdfium_spi'
+      content:
+      - JVN#79301396「Susieプラグイン「axpdfium.spi」における任意の DLL 読み込みに関する脆弱性」に対応
+      - 不要な機能を無効に設定したうえ pdfium を更新
+- 2015/01/08:
+  - その他:
+    - title: 「ax7z.spi for 7-zip 4.57+ s」を更新(s_y4b5)。
+      url: '#misc.ax7z_s_spi'
+      content:
+      - CoUnitialize()/CoUnitialize() の使用領域を限定
+        - Vista以降でネットワークフォルダにアクセスするとフリーズする等の挙動がこれで解消する可能性があります。使用ソフトとの組み合わせによっては逆にうまく動作しない場合も有り得ます。いずれの場合でも報告頂けると有り難いです。
+      - Boost を 1.57 に更新
+      - SQLite を 3.8.7.4 に更新
+    - title: 「ax7z.spi for 7-zip 4.57+」を更新(y3b6)。
+      url: '#misc.ax7z_spi'
+      content:
+      - CoUnitialize()/CoUnitialize() の使用領域を限定
+        - Vista以降でネットワークフォルダにアクセスするとフリーズする等の挙動がこれで解消する可能性があります。使用ソフトとの組み合わせによっては逆にうまく動作しない場合も有り得ます。いずれの場合でも報告頂けると有り難いです。
+      - Boost を 1.57 に更新
+- 2015/01/05:
+  - あけましておめでとうございます。本年もよろしくお願いします。:
+    - 遅くなりましたが、昨年、一昨年に引き続きまして新年更新で突貫で作成しております。
+  - その他:
+    - title: ちゃんとレンダリングする PDF 用 Susie plugin axpdfium.spi を公開(0.01)。
+      url: '#misc.axpdfium_spi'
+      content:
+      - axpdf--.spi は埋め込まれた画像を抽出するだけのプラグインでしたが、本プラグインはちゃんとレンダリングした結果を出力します。
+      - PDF レンダリングエンジンは PDFium (Foxit Reader, Google Chrome で使用されているものがオープンソースになったもの)を使用しています。GPL のような copyleft ライセンスではないのでライセンス的にもクリアなはず。
+      - 現時点では ax7z_s, axffmpeg 初期と同様に全ページ一括展開となっています。
+      - ファイルサイズがでかい(9MB)です。
 - 2014/09/03:
   - title: Cygwin 関連
     url: '#cygwin'
