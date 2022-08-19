@@ -16,11 +16,11 @@
   - title: Cygwin 関連
     url: '#cygwin'
     content:
-      - cygport-usrlocal を最新環境に合わせて調整 (0.10-1)。
-      - 古い libncurses が削除されたため最新環境で再ビルド(x86, x86_64とも)。再ビルドしたのみで upstream の取り込みは未実施です。:
-        - screen_cp932 (4.0.3-6)
-        - screen_patched (4.0.3-4)
-        - Jam less (382-iso262-ext03-cs_regex-3)
+    - cygport-usrlocal を最新環境に合わせて調整 (0.10-1)。
+    - "古い libncurses が削除されたため最新環境で再ビルド(x86, x86_64とも)。再ビルドしたのみで upstream の取り込みは未実施です。":
+      - screen_cp932 (4.0.3-6)
+      - screen_patched (4.0.3-4)
+      - Jam less (382-iso262-ext03-cs_regex-3)
 - 2018/05/16:
   - 3年も更新が空くとは思いもよらず。なにがしかを作っていたりはするのですがちょこっと更新してまたずっと空く状態になるかも。
   - その他:
@@ -34,14 +34,14 @@
     - title: 「ax7z.spi for 7-zip 4.57+ s」を更新(s_y4b5)。
       url: '#misc.ax7z_s_spi'
       content:
-      - CoUnitialize()/CoUnitialize() の使用領域を限定
+      - "CoUnitialize()/CoUnitialize() の使用領域を限定":
         - Vista以降でネットワークフォルダにアクセスするとフリーズする等の挙動がこれで解消する可能性があります。使用ソフトとの組み合わせによっては逆にうまく動作しない場合も有り得ます。いずれの場合でも報告頂けると有り難いです。
       - Boost を 1.57 に更新
       - SQLite を 3.8.7.4 に更新
     - title: 「ax7z.spi for 7-zip 4.57+」を更新(y3b6)。
       url: '#misc.ax7z_spi'
       content:
-      - CoUnitialize()/CoUnitialize() の使用領域を限定
+      - "CoUnitialize()/CoUnitialize() の使用領域を限定":
         - Vista以降でネットワークフォルダにアクセスするとフリーズする等の挙動がこれで解消する可能性があります。使用ソフトとの組み合わせによっては逆にうまく動作しない場合も有り得ます。いずれの場合でも報告頂けると有り難いです。
       - Boost を 1.57 に更新
 - 2015/01/05:
@@ -234,10 +234,8 @@
         IE7 以降が入っているなら存在するはずです、多分。念のため再配布パッケージも置いておきます。
 - 2012/05/20:
   - その他:
-    - 対 zip UTF-8 強制試行版 7z.dll (9.22beta 32bit/64bit)を公開。:
-      - UTF-8 フラグが立っていない zip ファイルに対してもファイル名を
-        UTF-8 として解釈しようと試みます。環境(どういう環境で作成された
-        zip をもらうか)によっては文字化け軽減に寄与する場合があるでしょう。
+    - "対 zip UTF-8 強制試行版 7z.dll (9.22beta 32bit/64bit)を公開。":
+      - UTF-8 フラグが立っていない zip ファイルに対してもファイル名を UTF-8 として解釈しようと試みます。環境(どういう環境で作成された zip をもらうか)によっては文字化け軽減に寄与する場合があるでしょう。
 - 2012/01/22:
   - その他:
     - 「ax7z.spi for 7-zip 4.57+ s」を更新(s_y4a2 α版)。:
@@ -313,7 +311,7 @@
     - GNU GLOBAL を 5.9 に更新。
     - GNU Triangulated Surface Library 0.7.6 を追加。
   - その他:
-    - 「ax7z.spi for 7-zip 4.57+」を更新(s_y3b4, y3b3)。:
+    - "「ax7z.spi for 7-zip 4.57+」を更新(s_y3b4, y3b3)。":
       - パスワード入力用ダイアログを最前面にする設定を追加。
       - SQLite を 3.6.23.1 に更新(s_y3b4)。
 - 2010/05/03:
@@ -352,8 +350,7 @@
       - cygport 補助を更新(cygport-usrlocal-0.4-1, cygport-ocaml-0.3-1)。
       - GNU GLOBAL を 5.7.7 ベースに更新。
       - nkf を 2.1.0 に更新。
-      - GNU Screen patch 版、GNU Screen cp932 変換版を Cygwin 1.7 向けに再ビルド(screen_patched-4.0.3-2,
-        screen_cp932-4.0.3-4)。
+      - GNU Screen patch 版、GNU Screen cp932 変換版を Cygwin 1.7 向けに再ビルド(screen_patched-4.0.3-2, screen_cp932-4.0.3-4)。
   - その他:
     - nlAutoLogin を更新(0.2)。:
       - HTTP レスポンスヘッダに x-niconico-authflag がない場合のガードを追加。
@@ -370,7 +367,7 @@
       - ドキュメントに afxscript.exe, afxscriptw.exe の違いを明記。
 - 2009/10/22:
   - その他:
-    - 「ax7z.spi for 7-zip 4.57+」を更新(s_y3b3, y3b2)。:
+    - "「ax7z.spi for 7-zip 4.57+」を更新(s_y3b3, y3b2)。":
       - gzip, bzip2 系の書庫(.tar.gz, .tgz 等)が展開できなかった点を修正。
       - ファイル名が暗号化された書庫に対応。
       - パスワードの取り扱いを変更(詳細は添付ドキュメント参照)。
@@ -448,7 +445,7 @@
       - 同パス(path)書庫ファイルに対するガードを強化(掲示板報告内容に対する暫定対応)。
 - 2009/08/23:
   - その他:
-    - 「ax7z.spi for 7-zip 4.57+」を更新(s_y3b1, y3b1)。:
+    - "「ax7z.spi for 7-zip 4.57+」を更新(s_y3b1, y3b1)。":
       - パスワードのキャッシュに対応(解凍対象書庫変更まで有効)
       - SQLite を 3.6.17 に更新(s_y3b1 のみ)。
 - 2009/08/14:
@@ -464,7 +461,7 @@
   - AutoHotkey 関連:
     - 「駄目文字微対策版」1.0.48.03 ベースに更新。
   - その他:
-    - 「ax7z.spi for 7-zip 4.57+」を分割(s_y3b0, y3b0)。:
+    - "「ax7z.spi for 7-zip 4.57+」を分割(s_y3b0, y3b0)。":
       - 汎用ソリッド書庫展開高速化機能以外については y2b5 相当。
       - 汎用ソリッド書庫展開高速化無し版(y3b0):
         - Hamana 用ソリッド書庫展開時のパスワード入力に対応。
@@ -635,8 +632,7 @@
     - ax7z.spi for 7-zip 4.57 を追加
 - 2008/01/03:
   - UltraVNC 関連:
-    - UltraVNC 1.0.4 RC5 - jp1 を追加<BR>(Sourceforge の SVN Revision 140 (2008/01/02
-      時点の最新) に対して KP774 氏の日本語版パッチを当てたもの)
+    - UltraVNC 1.0.4 RC5 - jp1 を追加<BR>(Sourceforge の SVN Revision 140 (2008/01/02 時点の最新) に対して KP774 氏の日本語版パッチを当てたもの)
 - 2008/01/02:
   - あけましておめでとうございます。<BR>更新しよう、更新しようと思っている間に年が変わってしまいました。多分今年もずっとこんな調子でしょうが、気負わずまたーりと続けていきたいと思います。
   - Cygwin 関連:
@@ -813,8 +809,7 @@
   - Cygwin 関連:
     - setup.exe 用パスから末尾の / を削除
     - Graphviz を 2.6 ベースに更新(DLL作成版)。(2.4 はDLL 作成版と言いながら配布物は静的リンク版になってました)
-    - ICU の配置を変更。(DLL 実体は ${prefix}/bin に配置。短縮されていない名前、および ${prefix}/lib 以下について symlink
-      を追加)(3.4-2)
+    - ICU の配置を変更。(DLL 実体は ${prefix}/bin に配置。短縮されていない名前、および ${prefix}/lib 以下について symlink を追加)(3.4-2)
     - APR - Windows ロケール強制パッチ適用版を 0.9.7 ベースに更新(0.9.7-1)
     - GNU screen に 2ch で公開されたパッチ等を当てて更新(4.0.2-3)
 - 2005/11/15:
@@ -873,5 +868,4 @@
   - H3 レベルまでアンカーをつける
   - Privoxy + GDS + Opera についての項目追加
   - Cygwin setup.exe でインストール可能な状態で配布
-  - Boost C++ Library, GD - .ttc 検索パッチ適用版, GNU GLOBAL, Graphviz, Jam less, libiconv
-    - cp932 パッチ適用版, GNU screen を配布対象として追加
+  - Boost C++ Library, GD - .ttc 検索パッチ適用版, GNU GLOBAL, Graphviz, Jam less, libiconv cp932 パッチ適用版, GNU screen を配布対象として追加
