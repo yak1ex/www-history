@@ -12,8 +12,8 @@ use IO::Scalar;
 
 my $HTML_ENCODE = 'UTF-8';
 my $META_THR = 30;
-my $BASE_URL = 'http://yak3.myhome.cx:8080/junks/';
-my $TARGET_FOLDER = '/home/atarashi/work/sitedata/junks';
+my $BASE_URL = 'http://yak3.mydns.jp:8080/junks/';
+my $TARGET_FOLDER = '/home/atarashi/work/www/data/junks';
 
 sub outtree
 {
