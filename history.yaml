@@ -1,4 +1,19 @@
 ---
+- 2023/07/23:
+  - "ドメイン取得(売却が決まったGoogle Domainsにてです……)してLet's encryptで証明書とるようにしました。https://yakex.dev/junks でアクセス可能です。"
+  - title: Privoxy 関連
+    url: '#privoxy.selfpatch'
+    content:
+    - 「機能追加版」を 3.0.34-stable ベースに更新(3.0.34-y0)。
+    - 「機能追加版」にGUIで設定可能な項目(forward-class, manual-tagger)をWin32ウィンドウメッセージからも変更可能とする機能を実装(3.0.34-y1)。
+    - 「機能追加版」バージョン更新忘れと細かな修正で機能的な変化はないはず(3.0.34-y2)。
+  - title: Cygwin 関連
+    url: '#cygwin'
+    content:
+    - Privoxy機能追加版はCygwin上でクロスビルド(i686-w64-mingw32)していますが本家に合わせて静的リンクするために必要なライブラリを追加しました。:
+      - mingw64-i686-pcre-with-static (8.45-1)
+      - mingw64-i686-mbedtls (2.23.0-1)
+      - mingw64-i686-brotli (1.0.9-3)
 - 2022/08/19:
   - なかなか生産的活動ができていませんがなんとか生存しております。
   - 家サーバー・プロジェクト(ieServer.Net)さんが停止されたようなのでDDNSをMyDNS.JPさんに移行しています(事後報告)。
