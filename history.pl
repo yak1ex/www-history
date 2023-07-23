@@ -12,7 +12,7 @@ use IO::Scalar;
 
 my $HTML_ENCODE = 'UTF-8';
 my $META_THR = 30;
-my $BASE_URL = 'http://yak3.mydns.jp:8080/junks/';
+my $BASE_URL = 'https://yakex.dev/junks/';
 my $TARGET_FOLDER = '/home/atarashi/work/www/data/junks';
 
 sub outtree
