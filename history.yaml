@@ -1,4 +1,18 @@
 ---
+- 2026/08/13:
+  - サイトとしては滅茶苦茶久々の更新です。
+  - title: Privoxy 関連
+    url: '#privoxy.selfpatch'
+    content:
+    - 「機能追加版」を4.2.0-stableベースに更新(4.2.0-y1)。:
+      - 公式でもWin32版4.2.0のリリースがありませんが、恐らく依存ライブラリのビルドの問題でこれを解決しています。
+      - 公式4.1.0のexeに合わせてconfigureオプションに--enable-compressoin --with-zstdを追加しています。
+  - title: Cygwin 関連
+    url: '#cygwin'
+    content:
+    - Privoxy機能追加版はCygwin上でクロスビルド(i686-w64-mingw32)していますが本家に合わせて静的リンクするために必要なライブラリを追加・更新しました。:
+      - mingw64-i686-pcre2-with-static (10.47-1)
+      - mingw64-i686-mbedtls (3.6.7-1)
 - 2023/07/23:
   - "ドメイン取得(売却が決まったGoogle Domainsにてです……)してLet's encryptで証明書とるようにしました。https://yakex.dev/junks でアクセス可能です。"
   - title: Privoxy 関連
